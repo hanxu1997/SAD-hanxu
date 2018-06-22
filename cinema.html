@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SAD Star</title>
+    <!--适配移动端窗口大小-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style/cinema.css" type="text/css" />
+    <link rel="stylesheet" href="./style/nav_and_footer.css" type="text/css" />
+    <link rel="stylesheet" href="./style/font-awesome/css/font-awesome.min.css" />
+    <!--jQuery-->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<!--popper-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<!--Bootstrap js-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div>
+    <!--顶部导航栏-->
+    <div class="header">
+        <div class="header-inner">
+            <!--logo-->
+            <div class="logo-container">
+                <img id="logo" src="./img/logo/logo.jpg" alt="logo" />
+            </div>
+            <!--城市定位-->
+            <div class="city-container" data-val="{currentcityid:20 }">
+                <div class="choose-city">
+                    <div class="city-name">
+                        广州<span class="caret"></span>
+                    </div>
+                </div>
+            </div>
+            <!--导航栏-->
+            <div class="nav align-items-center">
+                <ul class="list-inline nav-list">
+                    <li class="list-inline-item"><a href="">首页</a></li>
+                    <li class="list-inline-item"><a href="">影片</a></li>
+                    <li class="list-inline-item"><a href="">影院</a></li>
+                    <li class="list-inline-item"><a href="./hotPage.html">热点资讯</a></li>
+                </ul>
+            </div>
+            <div class="user-info">
+                <div class="user-avatar J-login">
+                    <img id="user" src="http://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png">
+                    <span class="caret"></span>
+                    <ul class="user-menu list-unstyled">
+                        <li class="text-center"><a href="javascript:void 0">登录</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search-container">
+                <form action="#" target="_blank">
+                    <input type="search" id="search" name="search" maxLength="32" placeholder="电影名" autocomplete="off" />
+                    <input type="submit" id="submit" value=""/>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
