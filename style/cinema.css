@@ -1,6 +1,146 @@
 .banner {
+    background-color: rgba(153,102,153,0.9);
     width: 100%;
     min-width: 1200px;
-    overflow: hidden;
+    top: 100px;
+    /*overflow: hidden;*/
     position: relative;
+}
+
+/*影院信息*/
+.banner .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    height: 320px;
+    position: relative;
+    top: 70px;
+}
+.clearfix:before {
+    content: " ";
+    display: table;
+}
+/*影院图片*/
+.cinema-left {
+    float:left;
+    width: 360px;
+    height: 340px;
+    overflow: hidden;
+    z-index: 9;
+}
+/*影院图片内容*/
+.cinema-left .avatar-shadow {
+    border-width:4px;
+    color: white;
+    border-style:solid;
+
+    position: relative;
+    margin: 0 30px;
+    width: 300px;
+    height: 300px;
+    padding-bottom: 40px;
+}
+
+
+.avatar-num {
+    bottom: 44px;
+    width: 292px;
+    line-height: 32px;
+    background-color: rgba(0,0,0,.6);
+    color: black;
+    font-size: 14px;
+    text-align: center;
+}
+
+.cinema-brief-container {
+    float: left;
+}
+
+.banner .cinema-brief-container .name {
+    margin: 0;
+    font-size: 26px;
+    margin-bottom: 9px;
+    font-weight: 400;
+}
+.features-group {
+    position: relative;
+}
+.banner .cinema-brief-container .address {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.telephone {
+    margin-bottom: 20px;
+}
+.banner .cinema-brief-container .features-group .group-title {
+    font-size: 14px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    width: 410px;
+}
+
+
+
+.feature {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.group-title::after {
+    border-top: 1px solid;
+    display: block;
+    content: "";
+    position: relative;
+    top: -10px;
+    left: 70px;
+}
+
+.tag {
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 2px;
+    min-width: 80px;
+    height: 22px;
+    line-height: 23px;
+    text-align: center;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.banner p, .banner ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1;
+}
+
+.desc {
+    display: inline-block;
+    max-width: 438px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.text-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+    
+}
+
+.group-title {
+    margin-bottom: 5px;
+}
+
+
+#container {
+    border-width:4px;
+    color: white;
+    border-style:solid;
+
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-right: 40px;
 }

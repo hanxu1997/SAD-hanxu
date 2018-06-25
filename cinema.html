@@ -9,16 +9,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <link rel="stylesheet" href="./style/cinema.css" type="text/css" />
     <link rel="stylesheet" href="./style/cinema_footer.css" type="text/css" />
-    <link rel="stylesheet" href="./style/font-awesome/css/font-awesome.min.css" />
     <!--jQuery-->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<!--popper-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<!--Bootstrap js-->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp"></script>
+    <script src="cinema.js" type="text/javascript"></script>
 </head>
 
-<body>
+<body onload="init()">
 <div>
     <!--顶部导航栏-->
     <div class="header">
@@ -62,32 +63,44 @@
         </div>
     </div>
     <div class="banner cinema-banner">
+    <div class="wrapper clearfix">
+        <div class="cinema-left">
+            <div class="avatar-shadow">
+                <img class="avatar" src="http://p0.meituan.net/deal/03424d20d989cba8ca5b6051a90f20aa352409.jpg@292w_292h_1e_1c">
+                <div class="avatar-num">查看全部11张图片</div>
+            </div>
+        </div>
         <div class="cinema-brief-container">
             <h3 class="name text-ellipsis">烽禾影城(祈福新邨店)</h3>
             <div class="address text-ellipsis">番禺区钟屏路钟福广场3层（祈福新村祈福医院旁）</div>
             <div class="telphone">电话：020-39108189 020-39108150</div>
             
             <div class="features-group">
-              <div class="group-title">影院服务</div>
+                <div class="group-title">
+                    影院服务
+                </div>
 
-              <div class="feature">
-                <span class="tag ">3D眼镜收费</span>
-                <p class="desc text-ellipsis" title="自费购买, 5.0元每副">自费购买, 5.0元每副</p>
-              </div>
-              <div class="feature">
-                <span class="tag ">儿童优惠</span>
-                <p class="desc text-ellipsis" title="1.3m以下儿童观看普通电影免票，每个成年人仅限带一名儿童">1.3m以下儿童观看普通电影免票，每个成年人仅限带一名儿童</p>
-              </div>
-              <div class="feature">
-                <span class="tag park-tag">可停车</span>
-                <p class="desc text-ellipsis" title="影城有免费停车位提供">影城有免费停车位提供</p>
-              </div>
+                <div class="feature">
+                    <span class="tag ">3D眼镜收费</span>
+                    <p class="desc text-ellipsis" title="自费购买, 5.0元每副">自费购买, 5.0元每副</p>
+                </div>
+                <div class="feature">
+                    <span class="tag ">儿童优惠</span>
+                    <p class="desc text-ellipsis" title="1.3m以下儿童观看普通电影免票，每个成年人仅限带一名儿童">1.3m以下儿童观看普通电影免票，每个成年人仅限带一名儿童</p>
+                </div>
+                <div class="feature">
+                    <span class="tag park-tag">可停车</span>
+                    <p class="desc text-ellipsis" title="影城有免费停车位提供">影城有免费停车位提供</p>
+                </div>
             </div>
         </div>
+        <div id="container">
+        </div>
+    </div>
     </div>
 
     <!--脚注-->
-    <div class="footer" id="footer">
+   <!--  <div class="footer" id="footer">
         <div class="container">
             <div class="col-lg-6 float-left clearfix">
                 <div class=" footer-grid">
@@ -112,7 +125,7 @@
             </div>
         </div>
     </div>
-
+ -->
 </div>
 </body>
 </html>
