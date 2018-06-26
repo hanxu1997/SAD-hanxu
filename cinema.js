@@ -1,7 +1,7 @@
 var citylocation,map,marker = null;
-var init = function() {
+var cinema_map = function() {
     var center = new qq.maps.LatLng(39.916527,116.397128);
-    map = new qq.maps.Map(document.getElementById('container'),{
+    map = new qq.maps.Map(document.getElementById('cinema-map'),{
         center: center,
         zoom: 13
     });
@@ -16,9 +16,5 @@ var init = function() {
 }
 
 $(document).ready(function() {
-    init();
-    var s = document.getElementById("container");
-    s.onclick=function() {
-        alert("container"); 
-    }
+    cinema_map();
 });

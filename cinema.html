@@ -4,6 +4,7 @@
     <title>SAD Star</title>
     <!--适配移动端窗口大小-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
@@ -19,7 +20,7 @@
     <script src="cinema.js" type="text/javascript"></script>
 </head>
 
-<body onload="init()">
+<body>
 <div>
     <!--顶部导航栏-->
     <div class="header">
@@ -63,42 +64,72 @@
         </div>
     </div>
     <div class="banner cinema-banner">
-    <div class="wrapper clearfix">
-        <div class="cinema-left">
-            <div class="avatar-shadow">
-                <img class="avatar" src="http://p0.meituan.net/deal/03424d20d989cba8ca5b6051a90f20aa352409.jpg@292w_292h_1e_1c">
-                <div class="avatar-num">查看全部11张图片</div>
-            </div>
-        </div>
-        <div class="cinema-brief-container">
-            <h3 class="name text-ellipsis">烽禾影城(祈福新邨店)</h3>
-            <div class="address text-ellipsis">番禺区钟屏路钟福广场3层（祈福新村祈福医院旁）</div>
-            <div class="telphone">电话：020-39108189 020-39108150</div>
-            
-            <div class="features-group">
-                <div class="group-title">
-                    影院服务
-                </div>
-
-                <div class="feature">
-                    <span class="tag ">3D眼镜收费</span>
-                    <p class="desc text-ellipsis" title="自费购买, 5.0元每副">自费购买, 5.0元每副</p>
-                </div>
-                <div class="feature">
-                    <span class="tag ">儿童优惠</span>
-                    <p class="desc text-ellipsis" title="1.3m以下儿童观看普通电影免票，每个成年人仅限带一名儿童">1.3m以下儿童观看普通电影免票，每个成年人仅限带一名儿童</p>
-                </div>
-                <div class="feature">
-                    <span class="tag park-tag">可停车</span>
-                    <p class="desc text-ellipsis" title="影城有免费停车位提供">影城有免费停车位提供</p>
+        <div class="wrapper clearfix">
+            <div class="cinema-left">
+                <div class="avatar-shadow">
+                    <img class="avatar" src="http://p0.meituan.net/deal/03424d20d989cba8ca5b6051a90f20aa352409.jpg@292w_292h_1e_1c">
+                    <div class="avatar-num">查看全部11张图片</div>
                 </div>
             </div>
-        </div>
-        <div id="container">
-        </div>
-    </div>
-    </div>
+            <div class="cinema-brief-container">
+                <h3 class="name text-ellipsis">烽禾影城(祈福新邨店)</h3>
+                <div class="address text-ellipsis">番禺区钟屏路钟福广场3层（祈福新村祈福医院旁）</div>
+                <div class="telphone">电话：020-39108189 020-39108150</div>
+                
+                <div class="features-group">
+                    <div class="group-title">
+                        影院服务
+                    </div>
 
+                    <div class="feature">
+                        <span class="tag ">3D眼镜收费</span>
+                        <p class="desc text-ellipsis" title="自费购买, 5.0元每副">自费购买, 5.0元每副</p>
+                    </div>
+                    <div class="feature">
+                        <span class="tag ">儿童优惠</span>
+                        <p class="desc text-ellipsis" title="1.3m以下儿童观看普通电影免票，每个成年人仅限带一名儿童">1.3m以下儿童观看普通电影免票，每个成年人仅限带一名儿童</p>
+                    </div>
+                    <div class="feature">
+                        <span class="tag park-tag">可停车</span>
+                        <p class="desc text-ellipsis" title="影城有免费停车位提供">影城有免费停车位提供</p>
+                    </div>
+                </div>
+            </div>
+            <div id="cinema-map">
+            </div>
+        </div>
+    </div>
+    <div class="movie-container" id="app">
+        <div class="movie-list-container" data-cinemaid="2161">
+            <div class="movie-list">
+                <div class="movie active" data-index="0">
+                    <img src="http://p1.meituan.net/movie/6383f5cb72f994370f9e817eaa495aaf428644.jpg@170w_235h_1e_1c" alt="">
+                </div>
+                <div class="movie " data-index="1" >
+                    <img src="http://p1.meituan.net/movie/3d17aa5ee07f5d66239d8393bcb8fe5196556.jpg@170w_235h_1e_1c" alt="">
+                </div>
+                <div class="movie " data-index="2">
+                    <img src="http://p1.meituan.net/movie/95f246163e1b11702685fd8b01421182466294.jpg@170w_235h_1e_1c" alt="">
+                </div>
+                <div class="movie " data-index="3">
+                    <img src="http://p0.meituan.net/movie/c6382117be87ac04fcc81fa02df815944946929.jpg@170w_235h_1e_1c" alt="">
+                </div>
+                <div class="movie " data-index="4">
+                    <img src="http://p1.meituan.net/movie/4e8f02b04bf755da8b888952392b9729968669.jpg@170w_235h_1e_1c" alt="">
+                </div>
+                <div class="movie " data-index="5">
+                    <img src="http://p0.meituan.net/movie/95c285648d7b6a97930b68765e80b6dc1272917.jpg@170w_235h_1e_1c" alt="">
+                </div>
+                <div class="movie " data-index="6">
+                    <img src="http://p1.meituan.net/movie/b86e91da87f856f39851859c162b10723253838.jpg@170w_235h_1e_1c" alt="">
+                </div>
+                <span class="pointer" style="left: 71.0138px;"></span>
+
+            </div>
+            <span class="scroll-prev scroll-btn"></span>
+            <span class="scroll-next scroll-btn"></span>
+        </div>
+    </div>
     <!--脚注-->
    <!--  <div class="footer" id="footer">
         <div class="container">
