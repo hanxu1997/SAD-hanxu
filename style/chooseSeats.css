@@ -1,0 +1,269 @@
+div {
+	display: block;
+}
+.maincontainer {
+	top: 100px;
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.order-progress-bar {
+	height: 60px;
+	width: 100%;
+	margin: 40px 0;
+	text-align: center;
+}
+
+.order-progress-bar .step {
+	float: left;
+	width: 25%;
+}
+
+.order-progress-bar .step-num {
+	color: #fff;
+	font-size: 12px;
+	display: inline-block;
+	width: 16px;
+	line-height: 16px;
+	border-radius: 10px;
+	text-align: center;
+	background-color: #ffd8d7;
+	position: relative;
+	top: 10px;
+}
+
+.order-progress-bar .done .step-num {
+	background-color: #f03d37;
+}
+
+.order-progress-bar .bar {
+	width: 0;
+	height: 4px;
+	border-left: 150px solid #ffd8d7;
+	border-right: 150px solid #ffd8d7;
+}
+
+.order-progress-bar .first .bar {
+	border-left-color: transparent!important;
+}
+
+.order-progress-bar .done .bar {
+	border-color: #f03d37;
+}
+
+
+.order-progress-bar .step-text {
+	font-size: 14px;
+	color: #999;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.order-progress-bar .done .step-text {
+	color: #f03d37;
+}
+
+.order-progress-bar .last .bar {
+	border-right-color: transparent!important;
+}
+
+/*主框*/
+.main {
+	width: 100%;
+	border: 1px solid #e5e5e5;
+	font-size: 0;
+}
+
+.clearfix:after, .clearfix:before {
+	content: " ";
+	display: table;
+}
+
+.hall {
+	width: 820px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.hall .seat-example {
+	margin: 30px 0 30px 120px;
+}
+
+.hall .seat-example .example {
+	display: inline-block;
+	font-size: 16px;
+	color: #666;
+	height: 26px;
+	line-height: 26px;
+	padding-left: 38px;
+	background-repeat: no-repeat;
+	margin-right: 50px;
+}
+
+
+.hall .seat-example .selectable-example {
+	background-image: url("../img/chooseSeats/selectable_seat.gif");
+	background-repeat: no-repeat;
+}
+
+
+.hall .seat-example .sold-example {
+	background-image: url("../img/chooseSeats/sold_seat.gif");
+	background-repeat: no-repeat;
+}
+
+.hall .seat-example .selected-example {
+	background-image: url("../img/chooseSeats/selected_seat.gif");
+	background-repeat: no-repeat;
+}
+
+
+/*座位图*/
+.seat-block {
+	font-size: 0;
+	overflow: hidden;
+	margin-left: 20px;
+	white-space: nowrap;
+}
+
+.seat-block .row-id-container {
+	width: 20px;
+	float: left;
+	margin-top: 112px;
+	white-space: normal;
+}
+
+.seat-block .row-id-container .row-id {
+	font-size: 16px;
+	color: #999;
+	margin-right: 40px;
+	margin-bottom: 10px;
+	display: inline-block;
+	width: 20px;
+	height: 26px;
+	line-height: 29px;
+	text-align: center;
+}
+
+.seat-block .seats-container {
+	margin-left: 50px;
+	overflow: auto;
+	position: relative;
+	padding-top: 112px;
+}
+
+.seats-container .screen-container {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+.seats-container .screen-container .screen {
+	width: 550px;
+	padding-top: 50px;
+	text-align: center;
+	font-size: 16px;
+	color: #666;
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.seats-container .screen-container .c-screen-line {
+	width: 0;
+	border-left: 1px dashed #e5e5e5;
+	position: absolute;
+	top: 90px;
+	bottom: 0;
+	left: 50%;
+}
+
+.seats-container {
+	display: inline-block;
+	min-width: 550px;
+}
+
+/*.seats-wrapper {
+	width: 500px;
+	height: 210px;
+	margin: auto;
+	margin-left: 20px;
+}*/
+
+
+/*座位*/
+td {
+	border:1px solid #aaaaaa;
+}
+*,table,tr,td {
+	margin:0;
+	padding:0;
+}
+/*.mouseoverStyle {
+	font-size:20px;
+	color:#ff0000;
+	background-color:#FFFF00;
+}
+.mouseoutStyle {
+	font-size:15px;
+	color:#FF0000;
+}*/
+
+#seatWrap {
+	width:440px;
+	margin:auto;
+	background:#ccc;
+}
+
+.seat, .seatSold {
+	width:23px;
+	height:19px;
+	margin:3px 14px 14px 14px;
+	float:left;
+	text-align:center;
+	color:#fff;
+}
+.seat {
+	background-image: url("../img/chooseSeats/selectable_seat.gif");
+	background-repeat: no-repeat;
+}
+
+* {
+	margin:0;
+	padding:0;
+	text-decoration:none;
+}
+.seatChoosed {
+	/*background:#00ff00;*/
+	background-image: url("../img/chooseSeats/selected_seat.gif");
+	background-repeat: no-repeat;
+}
+
+.seatSold {
+	background-image: url("../img/chooseSeats/sold_seat.gif");
+	background-repeat: no-repeat;
+}
+
+/*side*/
+.side {
+	width: 378px;
+	background-color: #f9f9f9;
+	padding: 20px;
+	display: inline-block;
+}
+
+.clearfix:after, .clearfix:before {
+	content: " ";
+	display: table;
+}
+
+.movie-info .poster {
+	width: 115px;
+	height: 158px;
+	border: 2px solid #fff;
+	box-shadow: 0 2px 7px 0 hsla(0, 0%, 53%, .5);
+	float: left;
+}
