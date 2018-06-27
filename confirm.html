@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>chooseSeats</title>
+    <title>confirm</title>
     <!--适配移动端窗口大小-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" >
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./style/chooseSeats.css" type="text/css" />
+    <link rel="stylesheet" href="./style/confirm.css" type="text/css" />
     <link rel="stylesheet" href="./style/cinema_footer.css" type="text/css" />
     <!--jQuery-->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -75,7 +75,7 @@
                 <div class="bar"></div>
                 <span class="step-text">选择座位</span>
             </div>
-            <div class="step">
+            <div class="step done">
                 <span class="step-num">3</span>
                 <div class="bar"></div>
                 <span class="step-text">14分钟内付款</span>
@@ -84,6 +84,42 @@
                 <span class="step-num">4</span>
                 <div class="bar"></div>
                 <span class="step-text">影院取票观影</span>
+            </div>
+        </div>
+        <table class="order-table">
+            <thead>
+                <tr>
+                    <th>影片</th>
+                    <th>时间</th>
+                    <th>影院</th>
+                    <th>座位</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="movie-name">《侏罗纪世界2》</td>
+                    <td class="showtime">今天 6月27日 19:20</td>
+                    <td class="cinema-name">烽禾影城(祈福新邨店)</td>
+                    <td>
+                        <span class="hall">1号厅</span>
+                        <div class="seats">
+                            <div>
+                                <span class=""><i>1</i>排<i>01</i>座</span>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="right">
+            <div class="price-wrapper">
+                <span>实际支付 :</span>
+                <span class="price">28</span>
+            </div>
+            <div>
+                <div class="pay-btn" data-order-id="3206359556" data-act="pay-click" data-bid="b_u30afks6">确认支付</div>
             </div>
         </div>
     </div>
