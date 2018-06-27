@@ -267,3 +267,186 @@ td {
 	box-shadow: 0 2px 7px 0 hsla(0, 0%, 53%, .5);
 	float: left;
 }
+
+.poster img {
+	width: 100%;
+	height: 100%;
+}
+
+.movie-info .content {
+	margin-left: 140px;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.movie-info .content .name {
+	font-size: 20px;
+	font-weight: 700;
+	color: #333;
+	margin: 0 0 14px;
+}
+
+.movie-info .info-item {
+	font-size: 12px;
+	color: #999;
+	margin-bottom: 4px;
+}
+
+.movie-info .info-item .value {
+	color: #151515;
+	margin-left: 2px;
+}
+
+.side .show-info {
+	margin-top: 20px;
+}
+
+.side .show-info .info-item {
+	margin-bottom: 9px;
+}
+
+.side .show-info .info-item>span {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+}
+
+.side .show-info .info-item .value {
+	margin-left: 10px;
+}
+
+.side .show-info .info-item .screen {
+	color: #f03d37;
+}
+
+.side .ticket-info {
+	padding: 20px 0 10px;
+	border-top: 1px dashed #e5e5e5;
+	border-bottom: 1px dashed #e5e5e5;
+}
+/*no-ticket*/
+.side .ticket-info .no-ticket {
+	display: none;
+}
+/* has-ticket */
+.side .ticket-info .has-ticket {
+	display: block;
+}
+
+.side .ticket-info .buy-limit {
+	font-size: 14px;
+	color: #999;
+	margin: 0;
+}
+
+.side .ticket-info .noselected {
+	font-size: 14px;
+	color: #333;
+	text-align: center;
+	margin: 28px 0 39px;
+}
+
+p {
+	display: block;
+}
+
+.side .ticket-info .text {
+	font-size: 14px;
+	color: #999;
+	float: left;
+}
+
+.side .ticket-info .ticket-container {
+	margin-left: 42px;
+	margin-bottom: 20px;
+	position: relative;
+	top: -5px;
+}
+.side .ticket-info .ticket {
+	position: relative;
+	font-size: 14px;
+	color: #f03d37;
+	display: inline-block;
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin: 0 12px 10px 0;
+}
+
+.side .ticket-info .total-price {
+	font-size: 14px;
+	color: #333;
+}
+
+.side .ticket-info .price:before {
+	content: "\FFE5";
+	font-size: 14px;
+}
+
+.side .ticket-info .price {
+	color: #f03d37;
+	font-size: 24px;
+}
+
+
+.confirm-order {
+	padding: 20px 0;
+	text-align: center;
+}
+
+.side .confirm-order .login-form {
+	display: inline-block;
+	width: 260px;
+}
+
+
+
+.side .confirm-order .login-form input {
+	display: block;
+	width: 218px;
+	height: 40px;
+	border: 1px solid #e5e5e5;
+	border-radius: 50px;
+	margin: 0 auto;
+	margin-bottom: 6px;
+	padding: 20px 20px;
+	font-size: 14px;
+	color: #333;
+}
+
+.side .confirm-order .code-inputer {
+	display: inline-block;
+	line-height: 42px;
+}
+
+.side .confirm-order .send-code {
+	font-size: 14px;
+	position: relative;
+	right: -60px;
+	top: -48px;
+	color: #f03d37;
+	cursor: default;
+}
+
+.side .confirm-order .confirm-btn.disable {
+	background-color: #dedede;
+	box-shadow: none;
+}
+
+.side .confirm-order .confirm-btn {
+	cursor: default;
+	width: 260px;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	border-radius: 21px;
+	position: relative;
+	left: 50%;
+	margin: 38px 0 0 -130px;
+	background-color: #f03d37;	
+}
